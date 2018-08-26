@@ -38,6 +38,7 @@ namespace BasicInheritance
 
         public void getConsoleSate()
         {
+            Console.Clear();
             Console.Write("\t Title" + Console.Title + "\n");
             Console.Write("\t Window size = " + Console.WindowHeight + " X " + Console.WindowWidth+ "\n");
             Console.Write("\t Background color " + Console.BackgroundColor + "\n");
