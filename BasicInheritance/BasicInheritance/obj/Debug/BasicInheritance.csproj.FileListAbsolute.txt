@@ -1,0 +1,7 @@
+C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\bin\Debug\BasicInheritance.exe.config
+C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\bin\Debug\BasicInheritance.exe
+C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\bin\Debug\BasicInheritance.pdb
+C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.csprojAssemblyReference.cache
+C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.csproj.CoreCompileInputs.cache
+C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.exe
+C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.pdb
