@@ -80,7 +80,7 @@ namespace BasicInheritance.human
             Hends = 255;
             Legs = 255;
             Mind = System.Int16.MaxValue;
-            setConsoleMessages("Super human create ... success\n "+Mind.ToString());
+            SetConsoleMessages("Super human create ... success\n "+Mind.ToString());
         }
 
         public HumanGeneral( byte _head, byte _hends, byte _legs, int _mind)
@@ -89,10 +89,10 @@ namespace BasicInheritance.human
             Hends = _hends;
             Legs = _legs;
             Mind = _mind;
-            setConsoleMessages(Head.ToString()+"\n"+Hends.ToString()+"\n"+Legs.ToString()+"\n"+Mind.ToString());
+            SetConsoleMessages(Head.ToString()+"\n"+Hends.ToString()+"\n"+Legs.ToString()+"\n"+Mind.ToString());
         }
 
-        private void setConsoleMessages(string mess)
+        private void SetConsoleMessages (string mess)
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("\t\t\t"+mess);

@@ -11,8 +11,13 @@ namespace BasicInheritance
     {
         static void Main(string[] args)
         {
-            human.HumanGeneral humanGen = new human.HumanGeneral();
-            human.HumanGeneral koresh = new human.HumanGeneral(200, 230, 150, 300_000);
+            human.EuropeansHuman europeansHuman = new human.EuropeansHuman();
+            europeansHuman.PublicTestFunc(8);
+            human.Ukraine.UkrainianHuman ukrainianHuman = new human.Ukraine.UkrainianHuman();
+            ukrainianHuman.PublicTestFunc(6);
+
+            //human.HumanGeneral humanGen = new human.HumanGeneral();
+            //human.HumanGeneral koresh = new human.HumanGeneral(200, 230, 150, 300_000);
 
             //Message infoMessage = new Message();
             //infoMessage.writeMessages("Helo World");

@@ -12,5 +12,6 @@ namespace BasicInheritance.human.Ukraine
         {
 
         }
+       
     }
 }
