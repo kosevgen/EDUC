@@ -5,3 +5,10 @@ C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\D
 C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.csproj.CoreCompileInputs.cache
 C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.exe
 C:\Users\e.kos\source\repos\C-Sharp\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.pdb
+D:\C#\workspace\EDUC\BasicInheritance\BasicInheritance\bin\Debug\BasicInheritance.exe.config
+D:\C#\workspace\EDUC\BasicInheritance\BasicInheritance\bin\Debug\BasicInheritance.exe
+D:\C#\workspace\EDUC\BasicInheritance\BasicInheritance\bin\Debug\BasicInheritance.pdb
+D:\C#\workspace\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.csprojAssemblyReference.cache
+D:\C#\workspace\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.csproj.CoreCompileInputs.cache
+D:\C#\workspace\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.exe
+D:\C#\workspace\EDUC\BasicInheritance\BasicInheritance\obj\Debug\BasicInheritance.pdb

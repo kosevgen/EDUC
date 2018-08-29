@@ -11,16 +11,19 @@ namespace BasicInheritance
     {
         static void Main(string[] args)
         {
-            Message infoMessage = new Message();
-            infoMessage.writeMessages("Helo World");
+            human.HumanGeneral humanGen = new human.HumanGeneral();
+            human.HumanGeneral koresh = new human.HumanGeneral(200, 230, 150, 300_000);
 
-            ErrorMessage errorMessage = new ErrorMessage();
-            errorMessage.writeMessages("\t\t\tERROR\n\t!!!This is error message!!!");
-            errorMessage.getConsoleSate();
+            //Message infoMessage = new Message();
+            //infoMessage.writeMessages("Helo World");
 
-            SuccessfullyMessage successfullyMessage = new SuccessfullyMessage();
-            successfullyMessage.writeMessages("\t\t\tSUCCESS!!!\n\t!!!This is success message!!!");
-            successfullyMessage.getConsoleSate();
+            //ErrorMessage errorMessage = new ErrorMessage();
+            //errorMessage.writeMessages("\t\t\tERROR\n\t!!!This is error message!!!");
+            //errorMessage.getConsoleSate();
+
+            //SuccessfullyMessage successfullyMessage = new SuccessfullyMessage();
+            //successfullyMessage.writeMessages("\t\t\tSUCCESS!!!\n\t!!!This is success message!!!");
+            //successfullyMessage.getConsoleSate();
         }
     }
 }

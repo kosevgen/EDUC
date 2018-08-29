@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="human\AustraloideHuman.cs" />
+    <Compile Include="human\EuropeansHuman.cs" />
+    <Compile Include="human\HumanGeneral.cs" />
+    <Compile Include="human\MongoloidHuman.cs" />
+    <Compile Include="human\NegroidHuman.cs" />
+    <Compile Include="human\Ukraine\UkrainianHuman.cs" />
     <Compile Include="message\ErrorMessage.cs" />
     <Compile Include="message\Message.cs" />
     <Compile Include="message\SuccessfullyMessage.cs" />
@@ -51,6 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DATA\UA\ADMIN\OBLASTI.txt" />
+    <Content Include="DATA\UA\ADMIN\RAIONU.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
