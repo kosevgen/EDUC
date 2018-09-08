@@ -23,6 +23,28 @@ namespace BasicInheritance.human
             get;
             set;
         }
+        Object Father
+        {
+            get;
+            set;
+        }
+        Object Mather
+        {
+            get;
+            set;
+        }
+        Object Sister
+        {
+            get;
+            set;
+        }
+        Object Brother
+        {
+            get;
+            set;
+        }
+        void Love();
+        
 
     }
 }
