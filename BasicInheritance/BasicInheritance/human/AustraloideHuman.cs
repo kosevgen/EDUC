@@ -6,27 +6,8 @@ using System.Threading.Tasks;
 
 namespace BasicInheritance.human
 {
-    class AustraloideHuman : HumanGeneral
+    interface AustraloideHuman
     {
-        private byte skinColorBlack;
-        public byte SkinColorBlack
-        {
-            get { return skinColorBlack; }
-            set
-            {
-                if (value.GetType() == typeof(byte))
-                {
-                    skinColorBlack = value;
-                }
-                else
-                {
-                    Console.WriteLine("\n\n\n\t\t\tSome error happened!!!\n May be veriable not \"BYTE\" ???");
-                }
-            }
-        }
-        public AustraloideHuman()
-        {
-            skinColorBlack = 180;
-        }
+        
     }
 }

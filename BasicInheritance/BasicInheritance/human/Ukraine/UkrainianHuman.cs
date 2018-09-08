@@ -10,6 +10,11 @@ namespace BasicInheritance.human.Ukraine
     {
         public UkrainianHuman()
         {
+            string _name;
+            string _secondName;
+            string _surName;
+            long _idNumber;
+            string _idCardSerial;
 
         }
        
