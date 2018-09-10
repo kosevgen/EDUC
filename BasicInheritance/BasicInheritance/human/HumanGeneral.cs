@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BasicInheritance.human
 {
-    interface HumanGeneral
+    interface IHumanGeneral
     {
         DateTime BornDate
         {

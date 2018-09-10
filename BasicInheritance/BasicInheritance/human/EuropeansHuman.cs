@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace BasicInheritance.human
 {
-    interface EuropeansHuman
+    interface IEuropeansHuman
     {
-        string Address
-        {
-            get;
-            set;
-        }
         string SkinColor
         {
             get;
