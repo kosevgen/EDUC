@@ -13,10 +13,5 @@ namespace BasicInheritance.human
             get;
             set;
         }
-        string Country //maybe not
-        {
-            get;
-            set;
-        }        
     }
 }

@@ -10,7 +10,7 @@ namespace BasicInheritance.human.Ukraine
     {
         DateTime _bornDate;
         long _idNumber;
-        string _passportId;
+        string _passportId, _skinColor;
         Object _father, _mather, _brather, _sister;
 
         public UkrainianHuman()
@@ -103,22 +103,23 @@ namespace BasicInheritance.human.Ukraine
         
         string IEuropeansHuman.SkinColor
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get
+            {
+                return _skinColor;
+            }
+            set
+            {
+                _skinColor = value;
+            }
         }
-        string IEuropeansHuman.Country
-        {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
-        }
-
+        
         public void Love()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Human have some love...");
         }
         public struct Address
         {
-            string Countri;
+            string Country;
             string Region;
             string City;
             string Street;
