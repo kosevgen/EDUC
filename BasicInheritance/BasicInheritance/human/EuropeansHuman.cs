@@ -13,5 +13,6 @@ namespace BasicInheritance.human
             get;
             set;
         }
+        void Job();
     }
 }

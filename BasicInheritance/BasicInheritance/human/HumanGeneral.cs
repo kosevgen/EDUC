@@ -44,6 +44,7 @@ namespace BasicInheritance.human
             set;
         }
         void Love();
+        void Emotion();
         
 
     }

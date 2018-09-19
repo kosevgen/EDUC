@@ -15,6 +15,8 @@ namespace BasicInheritance
             Console.Write("***Program is run!!!***\n\n\n");
             UkrainianHuman ukrainianHuman = new UkrainianHuman();
             ukrainianHuman.Love();
+            ukrainianHuman.Emotion();
+            ukrainianHuman.Job();
             Console.ReadKey();
         }
     }

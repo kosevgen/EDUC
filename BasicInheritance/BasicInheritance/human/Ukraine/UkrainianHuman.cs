@@ -112,7 +112,17 @@ namespace BasicInheritance.human.Ukraine
                 _skinColor = value;
             }
         }
-        
+
+        public void Emotion()
+        {
+            Console.WriteLine("People fill a joy...");
+        }
+
+        public void Job()
+        {
+            Console.WriteLine("We have cool job!!!");
+        }
+
         public void Love()
         {
             Console.WriteLine("Human have some love...");
