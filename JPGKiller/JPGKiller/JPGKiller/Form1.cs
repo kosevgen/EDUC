@@ -22,6 +22,7 @@ namespace JPGKiller
 
             Messages.MessageForm messageForm = new Messages.MessageForm("Test message!!! \nThis message creat a test program!!!");
             messageForm.Show();
+            FileManager.GetDirectoryAndFilesInfo getDirectoryAndFilesInfo = new FileManager.GetDirectoryAndFilesInfo();
             //Thread thread1 = new Thread(new ThreadStart());
             //thread1.Name = "one";
             //thread1.Start();
