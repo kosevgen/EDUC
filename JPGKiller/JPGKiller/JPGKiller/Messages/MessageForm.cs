@@ -12,16 +12,38 @@ namespace JPGKiller.Messages
 {
     public partial class MessageForm : Form
     {
-        public MessageForm()
+        private string imageForMessageForm = "1";
+        private string message;
+        private string font = "Times New Roman";
+        private float fontSize = (float)12.0;
+        string imagePath;
+
+        public MessageForm( string setMessages, string setImage, float setFontSize, string setFont)
         {
             InitializeComponent();
-            attachPicture();
+            setTexBox(setMessages, setFont, setFontSize);
+            attachPicture(setImage);
         }
-        public MessageForm( string mess)
+
+        public MessageForm(string setMessages, string setImage, float setFontSize)
         {
             InitializeComponent();
-            setTexBox(mess);
-            attachPicture();
+            setTexBox(setMessages, font, setFontSize);
+            attachPicture(setImage);
+        }
+
+        public MessageForm(string setMessages, string setImage)
+        {
+            InitializeComponent();
+            setTexBox(setMessages, font, fontSize);
+            attachPicture(setImage);
+        }
+
+        public MessageForm(string setMessages)
+        {
+            InitializeComponent();
+            setTexBox(setMessages, font, fontSize);
+            attachPicture(imageForMessageForm);
         }
 
         private void MessageForm_Load(object sender, EventArgs e)
@@ -33,11 +55,11 @@ namespace JPGKiller.Messages
         {
             this.Close();
         }
-        public bool setTexBox(string mess)
+        public bool setTexBox(string mess, string setF, float fontSize)
         {
             try
             {
-                textBoxMess.Font = new Font("Times New Roman",(float)14.0);
+                textBoxMess.Font = new Font(setF, fontSize);
                 textBoxMess.AppendText(mess);
             }catch(Exception ex)
             {
@@ -45,14 +67,27 @@ namespace JPGKiller.Messages
             }
             return true;
         }
-        public bool attachPicture()
+
+        public bool attachPicture(string succInfoError)
         {
+            if(succInfoError == "0")
+            {
+                imagePath = "C:\\Users\\e.kos\\source\\repos\\C-Sharp\\EDUC\\JPGKiller\\JPGKiller\\JPGKiller\\Resources\\success.bmp";
+            }
+            else if(succInfoError == "1")
+            {
+                imagePath = "C:\\Users\\e.kos\\source\\repos\\C-Sharp\\EDUC\\JPGKiller\\JPGKiller\\JPGKiller\\Resources\\info.bmp";
+            }
+            else if(succInfoError == "2")
+            {
+                imagePath = "C:\\Users\\e.kos\\source\\repos\\C-Sharp\\EDUC\\JPGKiller\\JPGKiller\\JPGKiller\\Resources\\error404.bmp";
+            }
             try
             {
-                
-                pictureBox.Image = new Bitmap("C:\\Users\\e.kos\\source\\repos\\C-Sharp\\EDUC\\JPGKiller\\JPGKiller\\JPGKiller\\Resources\\error404.bmp");
+                pictureBox.Image = new Bitmap(imagePath);
                 pictureBox.Show();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return false;
             }

@@ -95,8 +95,5 @@
   <ItemGroup>
     <None Include="Resources\JPGKill.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\strip.gif" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

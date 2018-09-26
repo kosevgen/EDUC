@@ -23,6 +23,9 @@ namespace JPGKiller
             Messages.MessageForm messageForm = new Messages.MessageForm("Test message!!! \nThis message creat a test program!!!");
             messageForm.Show();
             FileManager.GetDirectoryAndFilesInfo getDirectoryAndFilesInfo = new FileManager.GetDirectoryAndFilesInfo();
+            getDirectoryAndFilesInfo.runFileManager();
+            Messages.MessageForm messageForm2 = new Messages.MessageForm("!!!Test image!!!", "0",(float)16.0, "Courier New");
+            messageForm2.Show();
             //Thread thread1 = new Thread(new ThreadStart());
             //thread1.Name = "one";
             //thread1.Start();

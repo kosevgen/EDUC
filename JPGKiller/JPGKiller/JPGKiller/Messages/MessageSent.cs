@@ -11,7 +11,7 @@ namespace JPGKiller.Messages
         
         static public void SendErrorMessage(string errMess)
         {
-            throw new NotImplementedException();
+            MessageForm messageForm = new MessageForm("Hello!!!");
         }
 
         static public void SendInfoMessage(string infoMess)

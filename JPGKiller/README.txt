@@ -1,0 +1,1 @@
+This program comress images less then 15MB for send e-mail.

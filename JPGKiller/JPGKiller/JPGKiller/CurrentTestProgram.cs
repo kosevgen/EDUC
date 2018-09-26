@@ -14,7 +14,7 @@ namespace JPGKiller
         {
              void funcForThread()
              {
-                Messages.MessageForm testForm = new Messages.MessageForm();
+                Messages.MessageForm testForm = new Messages.MessageForm("Test messages");
                 testForm.Show();
              }
              Thread runMessageWindow = new Thread(new ThreadStart(funcForThread));
