@@ -15,7 +15,41 @@ namespace JPGKiller.FileManager
         private readonly string CompressedImgDirectoryPath = Directory.GetCurrentDirectory() + "\\Пожовані";
         private int fileCount;
         private int compressionLevel;
-
+        public string[] AllFileNames
+        {
+            get
+            {
+                return allFileNames;
+            }
+        }
+        public string CurrentDirectoryPath
+        {
+            get
+            {
+                return DirectoryPath;
+            }
+        }
+        public string CommpressedImageDirectory
+        {
+            get
+            {
+                return CompressedImgDirectoryPath;
+            }
+        }
+        public int SizeForMail
+        {
+            get
+            {
+                return contSizeForMailSystem;
+            }
+        }
+        public int CompressionLevel
+        {
+            get
+            {
+                return compressionLevel;
+            }
+        }
         private bool GetAllFileNames(String dirPath)//
         {
             try
@@ -100,18 +134,18 @@ namespace JPGKiller.FileManager
             
         }
  
-        private struct JpgInfo
-        {
-            public string dirJpgAddress;
-            public int compressionLevel;
-            public string dirCompressedJpgAddress;
-        }
+        //private struct JpgInfo
+        //{
+        //    public string dirJpgAddress;
+        //    public int compressionLevel;
+        //    public string dirCompressedJpgAddress;
+        //}
 
         public void RunFileManager()
         {
             long sizeAllImg;
             GetAllFileNames(DirectoryPath);
-
+            fileCount = GetCountFile(DirectoryPath);
             sizeAllImg = GetAllImageSize(fileCount, allFileNames);
             CalcCompressionLevel(sizeAllImg, (byte)fileCount);
             CreatCompressFolder();
