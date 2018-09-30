@@ -9,3 +9,14 @@ C:\Users\e.kos\source\repos\C-Sharp\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug
 C:\Users\e.kos\source\repos\C-Sharp\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.exe
 C:\Users\e.kos\source\repos\C-Sharp\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.pdb
 C:\Users\e.kos\source\repos\C-Sharp\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.Messages.MessageForm.resources
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\bin\Debug\JPGKiller.exe.config
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\bin\Debug\JPGKiller.exe
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\bin\Debug\JPGKiller.pdb
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.csprojAssemblyReference.cache
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.MainWindow.resources
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.Messages.MessageForm.resources
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.Properties.Resources.resources
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.csproj.GenerateResource.cache
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.csproj.CoreCompileInputs.cache
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.exe
+D:\C#\workspace\EDUC\JPGKiller\JPGKiller\JPGKiller\obj\Debug\JPGKiller.pdb

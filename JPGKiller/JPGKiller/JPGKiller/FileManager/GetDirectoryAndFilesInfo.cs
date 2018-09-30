@@ -21,7 +21,7 @@ namespace JPGKiller.FileManager
             try
             {
                 allFileNames = new string[GetCountFile(dirPath)];
-                allFileNames = System.IO.Directory.GetFiles(dirPath, "*.JPG");
+                allFileNames = System.IO.Directory.GetFiles(dirPath, "*.JPG|*.jpg");
                 Messages.MessageForm messageFromAllFileNames = new Messages.MessageForm("All file names work", "0", (float)16.0, "Courier New");
                 messageFromAllFileNames.Show();
                 return true;
@@ -100,14 +100,14 @@ namespace JPGKiller.FileManager
             
         }
  
-        private struct jpgInfo
+        private struct JpgInfo
         {
             public string dirJpgAddress;
             public int compressionLevel;
             public string dirCompressedJpgAddress;
         }
 
-        public void runFileManager()
+        public void RunFileManager()
         {
             long sizeAllImg;
             GetAllFileNames(DirectoryPath);
