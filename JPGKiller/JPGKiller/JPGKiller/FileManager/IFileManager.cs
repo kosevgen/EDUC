@@ -8,9 +8,10 @@ namespace JPGKiller.FileManager
 {
     interface IFileManager
     {
-        void GetFolderInfo();
-        void GetFileInfo();
-        void GetMedianaFileSize();
-        void GetDeltaCompressImage();
+        string GetFolderPatch();
+        string[] GetAllFileNames(string patch);
+        double GetFileSize(string fileName);
+        double GetAllFilesSize(string[] AllFileNames);
+        int GetDeltaCompressImage();
     }
 }

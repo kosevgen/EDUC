@@ -19,5 +19,6 @@ namespace JPGKiller.ImgManipulations
                 allFileNames = value;
             }
         }
+        //myImageCodecInfo = GetEncoderInfo("image/jpeg");
     }
 }

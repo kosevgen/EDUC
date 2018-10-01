@@ -19,7 +19,7 @@ namespace JPGKiller.FileManager
         {
             get
             {
-                return allFileNames;
+                return System.IO.Directory.GetFiles(DirectoryPath, "*.JPG|*.jpg");
             }
         }
         public string CurrentDirectoryPath
@@ -49,23 +49,6 @@ namespace JPGKiller.FileManager
             {
                 return compressionLevel;
             }
-        }
-        private bool GetAllFileNames(String dirPath)//
-        {
-            try
-            {
-                allFileNames = new string[GetCountFile(dirPath)];
-                allFileNames = System.IO.Directory.GetFiles(dirPath, "*.JPG|*.jpg");
-                Messages.MessageForm messageFromAllFileNames = new Messages.MessageForm("All file names work", "0", (float)16.0, "Courier New");
-                messageFromAllFileNames.Show();
-                return true;
-            }
-            catch (global::System.Exception)
-            {
-                //sent error message;
-                return false;
-            }
-
         }
 
         private int GetCountFile(String dirPath)//
@@ -133,18 +116,10 @@ namespace JPGKiller.FileManager
             }
             
         }
- 
-        //private struct JpgInfo
-        //{
-        //    public string dirJpgAddress;
-        //    public int compressionLevel;
-        //    public string dirCompressedJpgAddress;
-        //}
 
         public void RunFileManager()
         {
             long sizeAllImg;
-            GetAllFileNames(DirectoryPath);
             fileCount = GetCountFile(DirectoryPath);
             sizeAllImg = GetAllImageSize(fileCount, allFileNames);
             CalcCompressionLevel(sizeAllImg, (byte)fileCount);
