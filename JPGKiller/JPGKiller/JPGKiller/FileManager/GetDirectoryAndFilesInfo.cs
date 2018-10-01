@@ -9,17 +9,23 @@ namespace JPGKiller.FileManager
 {
     class GetDirectoryAndFilesInfo
     {
-        private const int contSizeForMailSystem = 15_728_640;
-        private string[] allFileNames;
-        private readonly string DirectoryPath = Directory.GetCurrentDirectory();
+        private const int constSizeForMailSystem = 15_728_640;
+        private string[] allFileNames = System.IO.Directory.GetFiles(DirectoryPath, "*.JPG|*.jpg");
+        private string DirectoryPath = Directory.GetCurrentDirectory();
         private readonly string CompressedImgDirectoryPath = Directory.GetCurrentDirectory() + "\\Пожовані";
         private int fileCount;
         private int compressionLevel;
+
+        public GetDirectoryAndFilesInfo()
+        {
+
+        }
+
         public string[] AllFileNames
         {
             get
             {
-                return System.IO.Directory.GetFiles(DirectoryPath, "*.JPG|*.jpg");
+                return allFileNames;
             }
         }
         public string CurrentDirectoryPath
@@ -40,7 +46,7 @@ namespace JPGKiller.FileManager
         {
             get
             {
-                return contSizeForMailSystem;
+                return constSizeForMailSystem;
             }
         }
         public int CompressionLevel
@@ -70,7 +76,7 @@ namespace JPGKiller.FileManager
         {
             if (allSize > 15 * 1024 * 1024)
             {
-                return (1 - (contSizeForMailSystem / allSize) + 0.1);
+                return (1 - (constSizeForMailSystem / allSize) + 0.1);
             }
             else if (allSize <= 15 * 1024 * 1024)
             {
@@ -121,7 +127,7 @@ namespace JPGKiller.FileManager
         {
             long sizeAllImg;
             fileCount = GetCountFile(DirectoryPath);
-            sizeAllImg = GetAllImageSize(fileCount, allFileNames);
+            sizeAllImg = GetAllImageSize(fileCount, this.allFileNames);
             CalcCompressionLevel(sizeAllImg, (byte)fileCount);
             CreatCompressFolder();
         }

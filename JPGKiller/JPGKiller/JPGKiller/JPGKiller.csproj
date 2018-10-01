@@ -54,6 +54,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImgManipulations\IImgCompress.cs" />
     <Compile Include="ImgManipulations\ImgCompress.cs" />
     <Compile Include="Messages\MessageForm.cs">
       <SubType>Form</SubType>
