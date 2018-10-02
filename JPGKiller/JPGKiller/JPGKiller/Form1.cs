@@ -22,7 +22,16 @@ namespace JPGKiller
 
             Messages.MessageForm messageForm = new Messages.MessageForm("Test message!!! \nThis message creat a test program!!!");
             messageForm.Show();
-            
+            Thread thread1 = new Thread(new ThreadStart(startThreadFMBL));
+            thread1.Name = "one";
+            thread1.Start();
+            void startThreadFMBL()
+            {
+                FileManager.FileManagerBL fileManager = new FileManager.FileManagerBL();
+                Messages.MessageForm messageFromBL = new Messages.MessageForm("Size images is " + "this is compress");
+            }
+
+
             //Thread thread1 = new Thread(new ThreadStart());
             //thread1.Name = "one";
             //thread1.Start();

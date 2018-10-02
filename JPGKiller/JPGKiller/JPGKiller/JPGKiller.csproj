@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CurrentTestProgram.cs" />
+    <Compile Include="FileManager\FileManagerBL.cs" />
     <Compile Include="FileManager\GetDirectoryAndFilesInfo.cs" />
     <Compile Include="FileManager\IFileManager.cs" />
     <Compile Include="Form1.cs">
