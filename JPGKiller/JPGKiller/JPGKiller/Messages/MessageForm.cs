@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JPGKiller.Messages
@@ -13,10 +7,9 @@ namespace JPGKiller.Messages
     public partial class MessageForm : Form
     {
         private string imageForMessageForm = "1";
-        private string message;
         private string font = "Times New Roman";
         private float fontSize = (float)12.0;
-        string imagePath;
+        Bitmap imagePath;
 
         public MessageForm( string setMessages, string setImage, float setFontSize, string setFont)
         {
@@ -46,6 +39,10 @@ namespace JPGKiller.Messages
             attachPicture(imageForMessageForm);
         }
 
+        public MessageForm()
+        {
+        }
+
         private void MessageForm_Load(object sender, EventArgs e)
         {
             
@@ -72,19 +69,19 @@ namespace JPGKiller.Messages
         {
             if(succInfoError == "0")
             {
-                imagePath = "C:\\Users\\e.kos\\source\\repos\\C-Sharp\\EDUC\\JPGKiller\\JPGKiller\\JPGKiller\\Resources\\success.bmp";
+                imagePath = Properties.Resources.success;
             }
             else if(succInfoError == "1")
             {
-                imagePath = "C:\\Users\\e.kos\\source\\repos\\C-Sharp\\EDUC\\JPGKiller\\JPGKiller\\JPGKiller\\Resources\\info.bmp";
+                imagePath = Properties.Resources.success;
             }
             else if(succInfoError == "2")
             {
-                imagePath = "C:\\Users\\e.kos\\source\\repos\\C-Sharp\\EDUC\\JPGKiller\\JPGKiller\\JPGKiller\\Resources\\error404.bmp";
+                imagePath = Properties.Resources.error404;
             }
             try
             {
-                pictureBox.Image = new Bitmap(imagePath);
+                pictureBox.Image = imagePath;
                 pictureBox.Show();
             }
             catch (Exception ex)

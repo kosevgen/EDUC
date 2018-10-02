@@ -6,25 +6,50 @@ using System.Threading.Tasks;
 
 namespace JPGKiller.Messages
 {
-    public static class MessageSent
+    public class MessageSent : IMessages
     {
-        
-        static public void SendErrorMessage(string errMess)
-        {
-            MessageForm messageForm = new MessageForm("Hello!!!");
-        }
 
-        static public void SendInfoMessage(string infoMess)
+        public bool SentErrorMessage(string mess, string fontName, float fontSize)
         {
             throw new NotImplementedException();
         }
 
-        static public void SendMessage()
+        public bool SentErrorMessage(string mess, string fontName)
         {
             throw new NotImplementedException();
         }
 
-        static public void SendSuccMessage(string succMess)
+        public bool SentErrorMessage(string mess)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SentInfoMessage(string mess, string fontName, float fontSize)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SentInfoMessage(string mess, string fontName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SentInfoMessage(string mess)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SentSuccMessage(string mess, string fontName, float fontSize)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SentSuccMessage(string mess, string fontName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SentSuccMessage(string mess)
         {
             throw new NotImplementedException();
         }
