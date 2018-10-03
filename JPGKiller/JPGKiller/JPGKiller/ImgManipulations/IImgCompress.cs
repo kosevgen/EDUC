@@ -7,8 +7,8 @@ namespace JPGKiller.ImgManipulations
     interface IImgCompress
     {
         Image CreateImgFromFile(string fileName);
-        ImageCodecInfo SetImageEncoder();
-        EncoderParameters SetEncoderParameters();
-        bool Save(Image img, string patch, ImageCodecInfo codecInfo, EncoderParameters encoder);
+        ImageCodecInfo GetEncoderInfo(string mimeType);
+        EncoderParameters SetEncoderParameters(long quality);
+        bool Save(string patch, ImageCodecInfo codecInfo, EncoderParameters encoder);
     }
 }

@@ -30,7 +30,7 @@ namespace JPGKiller
                 FileManager.FileManagerBL fileManager = new FileManager.FileManagerBL();
                 Messages.MessageForm messageFromBL = new Messages.MessageForm("Size images is " + "this is compress");
             }
-
+            
 
             //Thread thread1 = new Thread(new ThreadStart());
             //thread1.Name = "one";

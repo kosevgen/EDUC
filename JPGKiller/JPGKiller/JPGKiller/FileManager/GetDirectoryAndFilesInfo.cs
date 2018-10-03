@@ -11,8 +11,8 @@ namespace JPGKiller.FileManager
     class GetDirectoryAndFilesInfo
     {
         private const int constSizeForMailSystem = 15_728_640;
-        private string[] allFileNames = System.IO.Directory.GetFiles(DirectoryPath, "*.JPG|*.jpg");
-        private static readonly string DirectoryPath = Directory.GetCurrentDirectory();
+        private string[] allFileNames = Directory.GetFiles(DirectoryPath, "*.JPG|*.jpg");
+        private static string DirectoryPath = @"C:\Users\e.kos\source\repos\C-Sharp\EDUC\JPGKiller\JPGKiller\JPGKiller\bin\Debug"; //Directory.GetCurrentDirectory();
         private static readonly string CompressedImgDirectoryPath = Directory.GetCurrentDirectory() + "\\Пожовані";
         private int compressionLevel;
 
@@ -123,12 +123,12 @@ namespace JPGKiller.FileManager
 
         }
 
-        protected void RunFileManager()
-        {
-            long sizeAllImg;
-            sizeAllImg = GetAllImageSize(fileCount, this.allFileNames);
-            CalcCompressionLevel(sizeAllImg, (byte)fileCount);
-            CreatCompressFolder(DirectoryPath);
-        }
+        //protected void RunFileManager()
+        //{
+        //    long sizeAllImg;
+        //    sizeAllImg = GetAllImageSize(fileCount, this.allFileNames);
+        //    CalcCompressionLevel(sizeAllImg, (byte)fileCount);
+        //    CreatCompressFolder(DirectoryPath);
+        //}
     }
 }

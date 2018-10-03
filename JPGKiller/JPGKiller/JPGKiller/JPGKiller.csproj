@@ -56,6 +56,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ImgManipulations\IImgCompress.cs" />
+    <Compile Include="ImgManipulations\ImageCompressBL.cs" />
     <Compile Include="ImgManipulations\ImgCompress.cs" />
     <Compile Include="Messages\IMessages.cs" />
     <Compile Include="Messages\MessageForm.cs">

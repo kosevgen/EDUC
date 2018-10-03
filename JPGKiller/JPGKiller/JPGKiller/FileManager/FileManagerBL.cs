@@ -60,7 +60,7 @@ namespace JPGKiller.FileManager
             }
         }
 
-        bool ifFileSize(long fSize, int maxSize)
+        private bool ifFileSize(long fSize, int maxSize)
         {
             if (fSize <= maxSize)
             {
