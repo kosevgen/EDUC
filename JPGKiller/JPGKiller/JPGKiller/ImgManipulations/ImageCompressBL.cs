@@ -13,6 +13,8 @@ namespace JPGKiller.ImgManipulations
         System.Drawing.Imaging.Encoder encoder;
         public ImageCompressBL()
         {
+            FileManager.FileManagerBL fileManagerBL = new FileManager.FileManagerBL();
+            string[] allFileName = fileManagerBL.AllFileName;///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             ImgCompress imgCompress = new ImgCompress();
             imageCodecInfo = imgCompress.GetEncoderInfo("image/jpeg");
             encoder = System.Drawing.Imaging.Encoder.Quality;
