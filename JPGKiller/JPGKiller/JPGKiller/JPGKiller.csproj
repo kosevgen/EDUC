@@ -68,6 +68,9 @@
     <Compile Include="Messages\MessageSent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Threads\IThread.cs" />
+    <Compile Include="Threads\CreateThreads.cs" />
+    <Compile Include="Threads\ThreadManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,11 +14,14 @@ namespace JPGKiller.ImgManipulations
         public ImageCompressBL()
         {
             FileManager.FileManagerBL fileManagerBL = new FileManager.FileManagerBL();
-            string[] allFileName = fileManagerBL.AllFileName;///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            string[] allFileName = fileManagerBL.AllFileName;
             ImgCompress imgCompress = new ImgCompress();
             imageCodecInfo = imgCompress.GetEncoderInfo("image/jpeg");
             encoder = System.Drawing.Imaging.Encoder.Quality;
-
+            for(int i = 0; i < allFileName.Length; i++)
+            {
+                //some function for thread or thread run!!!
+            }
         }
     }
 }
